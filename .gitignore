@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Environment variables
+.env
+
+# Raw CMS datasets
+data/raw/
+
+# Processed datasets
+data/processed/
+
+# OS files
+.DS_Store
+Thumbs.db
