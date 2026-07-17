@@ -1,0 +1,5 @@
+-- This project loads data via Python (SQLAlchemy) rather than psql \copy,
+-- due to Windows file-permission issues with server-side COPY.
+-- See notebooks/00_load_to_postgres.ipynb for the actual load script.
+-- Equivalent psql command, if running Postgres server-side with file access:
+-- \copy claims_with_beneficiary FROM 'data/processed/claims_with_beneficiary.csv' DELIMITER ',' CSV HEADER;
