@@ -9,7 +9,7 @@ This project uses the CMS Data Entrepreneurs' Synthetic Public Use File (DE-SynP
 DE-SynPUF was built by CMS specifically so that analysts, researchers, and developers can practice working with realistic Medicare claims structures without accessing real, protected beneficiary data. CMS states explicitly in its own documentation that the disclosure-protection methods used to synthesize this data (hot-decking, variable coarsening, date perturbation) reduce much of the true statistical interdependence between variables. As a result:
 
 - **This project's findings should not be interpreted as real conclusions about Medicare beneficiaries or actual healthcare spending patterns.**
-- The value of this project lies in demonstrating a complete, methodologically sound claims-analytics pipeline — cleaning, relational modeling, cost aggregation, visualization, and statistical inference — using data structured identically to real CMS claims data.
+- The value of this project lies in demonstrating a complete, methodologically sound claims-analytics pipeline which includes cleaning, relational modeling, cost aggregation, visualization, and statistical inference using data structured identically to real CMS claims data.
 
 ## Data Cleaning Decisions
 
@@ -27,8 +27,8 @@ DE-SynPUF was built by CMS specifically so that analysts, researchers, and devel
 
 **Year-over-year growth confidence intervals**: The dataset spans only three years (2008–2010), producing only two year-over-year growth observations per claim type. This is too small a sample to support a statistically robust confidence interval on growth rate; the R script produces this output for methodological completeness, but the resulting interval should be read as illustrative rather than a reliable estimate.
 
-**Cost regression model**: A linear model of claim cost on beneficiary age and chronic condition flags was fit to demonstrate the approach. Given DE-SynPUF's synthetic disclosure-protection methods intentionally reduce true variable interdependence, the model's R² is expected to be low and should not be read as evidence of weak real-world relationships between age, chronic conditions, and healthcare cost — only as a demonstration of the modeling approach on this specific dataset.
+**Cost regression model**: A linear model of claim cost on beneficiary age and chronic condition flags was fit to demonstrate the approach. Given DE-SynPUF's synthetic disclosure-protection methods intentionally reduce true variable interdependence, the model's R² is expected to be low and should not be read as evidence of weak real-world relationships between age, chronic conditions, and healthcare cost. It is only as a demonstration of the modeling approach on this specific dataset.
 
 ## Summary
 
-Every limitation noted above reflects a deliberate, documented choice rather than an unnoticed gap. In a production setting — working with real CMS claims data for an actual Cost Transparency Board — the same pipeline structure would apply, with the caveats above replaced by genuine population-level statistical validity checks.
+Every limitation noted above reflects a deliberate, documented choice rather than an unnoticed gap. In a production setting, working with real CMS claims data for an actual Cost Transparency Board, the same pipeline structure would apply, with the caveats above replaced by genuine population-level statistical validity checks.
