@@ -4,9 +4,9 @@ A healthcare claims cost-analysis pipeline built on CMS synthetic Medicare claim
 
 ## Project Summary
 
-This project analyzes synthetic Medicare claims data to surface cost trends, utilization patterns, and spending drivers — the kind of analysis a state Health Care Authority's Cost Transparency Board uses to inform healthcare affordability policy. The pipeline covers the full analytics lifecycle: data cleaning, relational database loading, SQL-based cost aggregation, exploratory visualization, and statistical inference on cost drivers.
+This project analyzes synthetic Medicare claims data to surface cost trends, utilization patterns, and spending drivers, the kind of analysis a state Health Care Authority's Cost Transparency Board uses to inform healthcare affordability policy. The pipeline covers the full analytics lifecycle: data cleaning, relational database loading, SQL-based cost aggregation, exploratory visualization, and statistical inference on cost drivers.
 
-**Note on data**: This project uses CMS's Data Entrepreneurs' Synthetic Public Use File (DE-SynPUF), which is fully synthetic data designed for building and testing claims-analytics tools. Per CMS's own documentation, DE-SynPUF is not intended to support real inferential conclusions about the Medicare population — the value of this project is in the analytics pipeline and methodology, not in any findings about actual healthcare trends.
+**Note on data**: This project uses CMS's Data Entrepreneurs' Synthetic Public Use File (DE-SynPUF), which is fully synthetic data designed for building and testing claims-analytics tools. Per CMS's own documentation, DE-SynPUF is not intended to support real inferential conclusions about the Medicare population, the value of this project is in the analytics pipeline and methodology, not in any findings about actual healthcare trends.
 
 Dashboard Link: https://public.tableau.com/app/profile/venkata.botta/viz/HCA_Cost_Transparency_Dashboard/Dashboard1
 
